@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for plugin &quot;tx_aomamebootstrap_pi1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="page_title_1">Collapse Settings</label>
+			<label index="contentuidlist">Content (required)</label>
+			<label index="accordinghtmlid">HTML ID of the collapse content</label>
+			<label index="bootstrapspan">Bootstrap span (width)</label>
+			<label index="bootstraprow">Wrap with a bootstrap row</label>
+			<label index="collapsestyle">Collapse function</label>
+		</languageKey>
+	</data>
+</T3locallang>

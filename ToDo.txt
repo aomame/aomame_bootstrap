@@ -1,0 +1,4 @@
+
+ - pi4: Ajax loading image while images of the gallery are not ready to display.
+ - pi3: integration of Bootstrap Tooltip plugin to the RTE
+ - initializing Bootstraps Buttons and Buttongroupes to RTE

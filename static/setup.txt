@@ -1,0 +1,57 @@
+plugin.tx_aomamebootstrap_pi1 {
+	bootstrap {
+		collapse {
+			contentUidList = 
+			accordingHtmlId = aomame_collapse
+			bootstrapSpan = 
+			bootstrapRow =
+			collapseStyle = toggle 
+		}
+		tab {
+			contentUidList =
+			tabHtmlId = aomame_tab
+			bootstrapSpan = 
+			bootstrapRow =
+			activeTab = 1
+		}
+		popover {
+			contentUid = 
+			popoverHtmlId = aomame_popover
+			direction = 
+			selector = 
+			trigger = click
+			delayShow = 500
+			delayHide = 100
+		}
+		carousel {
+			contentUidList =
+			carouselHtmlId = aomame_carousel
+			bootstrapSpan =
+			bootstrapRow = 
+			showText = 1
+			interval = 6000
+			stopOnHover = 1
+		}
+	}
+}
+
+#wrap content with section frames
+tt_content.stdWrap.innerWrap.cObject{
+	241=< tt_content.stdWrap.innerWrap.cObject.default
+	241.20.10.value = hidden-desktop
+	
+	242=< tt_content.stdWrap.innerWrap.cObject.default
+	242.20.10.value = hidden-tablet
+	
+	243=< tt_content.stdWrap.innerWrap.cObject.default
+	243.20.10.value = hidden-phone
+	
+	244=< tt_content.stdWrap.innerWrap.cObject.default
+	244.20.10.value = visible-desktop
+	
+	245=< tt_content.stdWrap.innerWrap.cObject.default
+	245.20.10.value = visible-tablet
+	
+	246=< tt_content.stdWrap.innerWrap.cObject.default
+	246.20.10.value = visible-phone
+}

@@ -1,0 +1,2 @@
+# cat=basic/enable; type=boolean; label=Set PageTSconfig by default:Add Layouts to each Content Element to choose the Bootstrap visibility for different devices - e.g. .visible-desktop or .hidden-phone
+setPageTSconfig = 1

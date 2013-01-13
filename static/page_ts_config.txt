@@ -1,0 +1,9 @@
+TCEFORM.tt_content.section_frame {
+     addItems.241 = Hidden-Desktop
+     addItems.242 = Hidden-Tablet
+     addItems.243 = Hidden-Phone
+     addItems.244 = Visible-Desktop
+     addItems.245 = Visible-Tablet
+     addItems.246 = Visible-Phone
+}
+  
