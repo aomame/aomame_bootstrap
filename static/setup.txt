@@ -35,23 +35,126 @@ plugin.tx_aomamebootstrap_pi1 {
 	}
 }
 
-#wrap content with section frames
-tt_content.stdWrap.innerWrap.cObject{
-	241=< tt_content.stdWrap.innerWrap.cObject.default
-	241.20.10.value = hidden-desktop
+
+
+tt_content.stdWrap.innerWrap.cObject.default {
+	20 {
+		5 = COA
+		5 {
+			10 = LOAD_REGISTER
+			10 {
+				direction.cObject = CASE
+				direction.cObject {
+					key.field = tx_aomamebootstrap_direction
+					1 = TEXT
+					1.value = pull-left
+					2 = TEXT
+					2.value = pull-right
+					default >
+				}
+				
+				alert.cObject = CASE
+				alert.cObject {
+					key.field = tx_aomamebootstrap_alert
+					1 = TEXT
+					1.value = alert alert-success
+					2 = TEXT
+					2.value = alert alert-info
+					3 = TEXT
+					3.value = alert alert-warning
+					4 = TEXT
+					4.value = alert alert-error
+					default >
+				}	
+				
+				well.cObject = CASE
+				well.cObject {
+					key.field = tx_aomamebootstrap_well
+					1 = TEXT
+					1.value = well well-large
+					2 = TEXT
+					2.value = well well-small
+					default >
+				}
+				
+				span.cObject = CASE
+				span.cObject {
+					key.field = tx_aomamebootstrap_span
+					1 = TEXT
+					1.value = span1
+					2 = TEXT
+					2.value = span2
+					3 = TEXT
+					3.value = span3
+					4 = TEXT
+					4.value = span4
+					5 = TEXT
+					5.value = span5
+					6 = TEXT
+					6.value = span6
+					7 = TEXT
+					7.value = span7
+					8 = TEXT
+					8.value = span8
+					9 = TEXT
+					9.value = span9
+					10 = TEXT
+					10.value = span10
+					11 = TEXT
+					11.value = span11
+					12 = TEXT
+					12.value = span12
+					default >
+				}
+				
+				visibility.cObject = CASE
+				visibility.cObject {
+					key.field = tx_aomamebootstrap_visibility
+					1 = TEXT
+					1.value = hidden-phone
+					2 = TEXT
+					2.value = hidden-tablet
+					3 = TEXT
+					3.value = hidden-desktop
+					4 = TEXT
+					4.value = visible-phone
+					5 = TEXT
+					5.value = visible-tablet
+					6 = TEXT
+					6.value = visible-desktop
+					default >
+				}
+				
+				muted = muted
+				muted.if.isTrue.field = tx_aomamebootstrap_muted
+				
+				clear = clearfix
+				clear.if.isTrue.field = tx_aomamebootstrap_clear
+			}
+			
+			
+		}
+		10.value = {register:direction} {register:alert} {register:well} {register:muted} {register:clear} {register:span} {register:visibility}
+		10.insertData = 1
+	}
 	
-	242=< tt_content.stdWrap.innerWrap.cObject.default
-	242.20.10.value = hidden-tablet
+	#insert the Bootstrap closebutton if checkbox is active within the backend content element
+	30 {
+		cObject.default {
+			value = |</div>
+			wrap = ><button type="button" class="close" data-dismiss="alert">&times;</button>|
+			wrap.if.isTrue.field = tx_aomamebootstrap_closebutton
+			
+			wrap2 = >|
+			wrap2.if {
+				isTrue.field = tx_aomamebootstrap_closebutton
+				negate = 1
+			}
+		}
+	}
 	
-	243=< tt_content.stdWrap.innerWrap.cObject.default
-	243.20.10.value = hidden-phone
 	
-	244=< tt_content.stdWrap.innerWrap.cObject.default
-	244.20.10.value = visible-desktop
+	97 = RESTORE_REGISTER
 	
-	245=< tt_content.stdWrap.innerWrap.cObject.default
-	245.20.10.value = visible-tablet
-	
-	246=< tt_content.stdWrap.innerWrap.cObject.default
-	246.20.10.value = visible-phone
 }
+

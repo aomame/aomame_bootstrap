@@ -25,7 +25,6 @@
         <label>LLL:EXT:aomame_bootstrap/pi4/locallang.xml:carouselhtmlid</label>
         <config>
           <type>input</type>
-          <eval>required</eval>
         </config>
       </TCEforms>
     </carouselhtmlid>

@@ -25,7 +25,6 @@
         <label>LLL:EXT:aomame_bootstrap/pi2/locallang.xml:tabhtmlid</label>
         <config>
           <type>input</type>
-          <eval>required</eval>
         </config>
       </TCEforms>
     </tabhtmlid>

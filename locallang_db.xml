@@ -10,6 +10,46 @@
 			<label index="tt_content.list_type_pi2">Bootstrap Tab</label>
 			<label index="tt_content.list_type_pi3">Bootstrap Popover</label>
 			<label index="tt_content.list_type_pi4">Bootstrap Carousel</label>
+			
+			<label index="tt_content.empty_field">none</label>
+			<label index="tt_content.select_muted">Add Bootstrap class .muted</label>
+			<label index="tt_content.select_closebutton">Add Bootstrap close button</label>
+			<label index="tt_content.select_clear">Add Bootstrap class .clearfix</label>
+			<label index="tt_content.select_direction_left">Pull Left</label>
+			<label index="tt_content.select_direction_right">Pull Right</label>
+			<label index="tt_content.select_alert_error">Alert Error</label>
+			<label index="tt_content.select_alert_success">Allert Success</label>
+			<label index="tt_content.select_alert_info">Alert Info</label>
+			<label index="tt_content.select_alert_warning">Alert Warning</label>
+			<label index="tt_content.select_well_large">Well large</label>
+			<label index="tt_content.select_well_small">Well small</label>
+			
+			<label index="tt_content.select_span_1">span1</label>
+			<label index="tt_content.select_span_2">span2</label>
+			<label index="tt_content.select_span_3">span3</label>
+			<label index="tt_content.select_span_4">span4</label>
+			<label index="tt_content.select_span_5">span5</label>
+			<label index="tt_content.select_span_6">span6</label>
+			<label index="tt_content.select_span_7">span7</label>
+			<label index="tt_content.select_span_8">span8</label>
+			<label index="tt_content.select_span_9">span9</label>
+			<label index="tt_content.select_span_10">span10</label>
+			<label index="tt_content.select_span_11">span11</label>
+			<label index="tt_content.select_span_12">span12</label>
+			
+			<label index="tt_content.select_hidden_phone">Hidden Phone</label>
+			<label index="tt_content.select_hidden_tablet">Hidden Tablet</label>
+			<label index="tt_content.select_hidden_desktop">Hidden Desktop</label>
+			<label index="tt_content.select_visible_phone">Visible Phone</label>
+			<label index="tt_content.select_visible_tablet">Visible Tablet</label>
+			<label index="tt_content.select_visible_desktop">Visible Desktop</label>
+			
+			<label index="tt_content.title_direction">Bootstrap Direction</label>
+			<label index="tt_content.title_visibility">Bootstrap Visibility</label>
+			<label index="tt_content.title_alert">Bootstrap Alert</label>
+			<label index="tt_content.title_well">Bootstrap Well</label>
+			<label index="tt_content.title_muted">Bootstrap Muted</label>
+			<label index="tt_content.title_span">Bootstrap Span</label>
 		</languageKey>
 	</data>
 </T3locallang>
