@@ -6,14 +6,9 @@
 	</meta>
 	<data type="array">
 		<languageKey index="default" type="array">
-			<label index="pi1_title">Bootstrap Collapse</label>
-			<label index="pi1_plus_wiz_description">Add the Bootstrap collapse menu to the frontend.</label>
-			<label index="pi2_title">Bootstrap Tab</label>
-			<label index="pi2_plus_wiz_description">Add the Bootstrap tab menu to the frontend.</label>
-			<label index="pi3_title">Bootstrap Popover</label>
-			<label index="pi3_plus_wiz_description">Add a Bootstrap popover to the frontend.</label>
-			<label index="pi4_title">Bootstrap Carousel</label>
-			<label index="pi4_plus_wiz_description">Add the Bootstrap carousel to the frontend.</label>
+			<label index="pi1_title">Bootstrap Component</label>
+			<label index="pi1_plus_wiz_description">Add one of the Bootstrap components</label>
+			
 		</languageKey>
 	</data>
 </T3locallang>

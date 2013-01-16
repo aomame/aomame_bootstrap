@@ -47,113 +47,39 @@ class tx_aomamebootstrap_pi1 extends tslib_pibase {
 	public function main($content, array $conf) {
 		$this->conf = $conf;
 		$this->pi_setPiVarDefaults();
-		$this->pi_loadLL();
 		$this->pi_initPIflexForm();
-		$this->configuration();
-		$this->writeJavaScriptConfiguration();
-		$this->getData();
-		$this->buildContent();
+		
+		//get selected component
+		$getSelection = $this->pi_getFFvalue($this->cObj->data['pi_flexform'], 'selection', 'sDEF');
+		$selection = $getSelection ? $getSelection : $this->conf['bootstrap.']['component'];
+		
+		
+		switch($selection){
+			case 'collapse':
+				$i = t3lib_div::makeInstance('tx_aomamebootstrap_component_collapse', $conf, $this->cObj);
+				$content = $i->content;
+				break;
+			case 'tab':
+				$i = t3lib_div::makeInstance('tx_aomamebootstrap_component_tab', $conf, $this->cObj);
+				$content = $i->content;
+				break;
+			case 'popover':
+				$i = t3lib_div::makeInstance('tx_aomamebootstrap_component_popover', $conf, $this->cObj);
+				$content = $i->content;
+				break;
+			case 'carousel':
+				$i = t3lib_div::makeInstance('tx_aomamebootstrap_component_carousel', $conf, $this->cObj);
+				$content = $i->content;
+				break;
+		}
 			
 		//Debug
 		//$GLOBALS["TSFE"]->set_no_cache();
 		//echo t3lib_utility_Debug::debug();
 		
-		$content = $this->content;
 		return $this->pi_wrapInBaseClass($content);
 	}	
 	
-	
-	private function buildContent(){
-		$according_id = $this->accordingHtmlId ? 'id="'.$this->accordingHtmlId.'"':'';
-		$bootstrap_span = $this->bootstrapSpan ? ' '.$this->bootstrapSpan : '';
-		$content = '';
-		
-		$i=0;
-		foreach($this->collapseData as $k => $v){
-			$content .= '
-				<div class="accordion-group">
-					<div class="accordion-heading">
-						<a class="accordion-toggle" data-toggle="collapse" data-parent="#'.$this->accordingHtmlId.'" href="#collapse_'.$i.'">
-							'.$this->collapseData[$i]['header'].'
-						</a>
-					</div>
-					<div id="collapse_'.$i.'"class="accordion-body collapse">
-						<div class="accordion-inner">
-							'.$this->collapseData[$i]['content'].'
-						</div>
-					</div>
-				</div>
-			';
-			$i++;
-		}
-		
-		
-		$content = '<div class="accordion'.$bootstrap_span.'" '.$according_id.'>'.$content.'</div>';
-		if($this->bootstrapRow){
-			$content = '<div class="'.$this->bootstrapRow.'">'.$content.'</div>';
-		}
-		$this->content = $content;
-		
-		return false;
-	}
-	
-	
-	private function writeJavaScriptConfiguration(){
-		$GLOBALS['TSFE']->additionalFooterData[$this->extKey] = '
-		  <script type="text/javascript" >
-			$(".collapse").collapse("'.$this->collapseStyle.'");
-		  </script>
-		';
-		return false;
-	}
-	
-	
-	private function getData(){
-		$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery(
-             '*',   #select
-             'tt_content', #from
-             'uid IN('.$this->contentUidList.')',  #where
-             $groupBy='',
-             $orderBy='',
-             $limit=''
-        );
-        
-        $c=0;
-        while( $row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res)) {
-        	foreach($row as $k => $v){
-        		if ($k == 'header'){
-        			$this->collapseData[$c]['header'] = $v;
-        		}
-        		if($k == 'uid'){
-        			$conf = array('tables' => 'tt_content','source' => $v,'dontCheckPid' => 1);
-	    			$this->collapseData[$c]['content'] = $this->cObj->RECORDS($conf);
-        		}
-        	}
-        	$c++;
-        }
-        return false;
-	}
-	
-	
-	private function configuration(){
-		//check for flexform or typoscript settings
-		$getContentUidList = $this->pi_getFFvalue($this->cObj->data['pi_flexform'], 'contentuidlist', 'sDEF');
-		$this->contentUidList = $getContentUidList ? $getContentUidList:$this->conf['bootstrap.']['collapse.']['contentUidList'];
-		
-		$getAccordingHtmlId = $this->pi_getFFvalue($this->cObj->data['pi_flexform'], 'accordinghtmlid', 'sDEF');
-		$this->accordingHtmlId = $getAccordingHtmlId ? $getAccordingHtmlId:$this->conf['bootstrap.']['collapse.']['accordingHtmlId'];
-		
-		$getBootstrapSpan = $this->pi_getFFvalue($this->cObj->data['pi_flexform'], 'bootstrapspan', 'sDEF');
-		$this->bootstrapSpan = $getBootstrapSpan ? $getBootstrapSpan:$this->conf['bootstrap.']['collapse.']['bootstrapSpan'];
-		
-		$getBootstrapRow = $this->pi_getFFvalue($this->cObj->data['pi_flexform'], 'bootstraprow', 'sDEF');
-		$this->bootstrapRow = $getBootstrapRow ? $getBootstrapRow:$this->conf['bootstrap.']['collapse.']['bootstrapRow'];
-		
-		$getCollapseStyle = $this->pi_getFFvalue($this->cObj->data['pi_flexform'], 'collapsestyle', 'sDEF');
-		$this->collapseStyle = $getCollapseStyle ? $getCollapseStyle:$this->conf['bootstrap.']['collapse.']['collapseStyle'];
-		
-		return false;
-	}
 }
 
 

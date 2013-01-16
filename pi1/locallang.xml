@@ -6,12 +6,40 @@
 	</meta>
 	<data type="array">
 		<languageKey index="default" type="array">
-			<label index="page_title_1">Collapse Settings</label>
-			<label index="contentuidlist">Content (required)</label>
-			<label index="accordinghtmlid">HTML ID of the collapse content (required)</label>
-			<label index="bootstrapspan">Bootstrap span (width)</label>
-			<label index="bootstraprow">Wrap with a bootstrap row</label>
-			<label index="collapsestyle">Collapse function</label>
+			<label index="collapse.page_title_1">Collapse Settings</label>
+			<label index="collapse.contentuidlist">Content (required)</label>
+			<label index="collapse.accordinghtmlid">HTML ID of the collapse content (required)</label>
+			<label index="collapse.bootstrapspan">Bootstrap span (width)</label>
+			<label index="collapse.bootstraprow">Wrap with a bootstrap row</label>
+			<label index="collapse.collapsestyle">Collapse function</label>
+			
+			
+			<label index="tab.page_title_1">Tab Settings</label>
+			<label index="tab.contentuidlist">Content (required)</label>
+			<label index="tab.tabhtmlid">HTML ID of the tab menu (required)</label>
+			<label index="tab.bootstrapspan">Bootstrap span (width)</label>
+			<label index="tab.bootstraprow">Wrap with a bootstrap row</label>
+			<label index="tab.activetab">Number of the active tab while the page is loading</label>
+			
+			
+			<label index="popover.page_title_1">Popover Settings</label>
+			<label index="popover.contentuid">Content (required)</label>
+			<label index="popover.direction">Direction</label>
+			<label index="popover.selector">jQuery selector on which the popover should appear (required)</label>
+			<label index="popover.trigger">Trigger</label>
+			<label index="popover.delayshow">Delay: Show</label>
+			<label index="popover.delayhide">Delay: Hide</label>
+			
+			
+			<label index="carousel.page_title_1">Carousel Settings</label>
+			<label index="carousel.contentuidlist">Content list (required)</label>
+			<label index="carousel.carouselhtmlid">HTML ID of the gallery (required)</label>
+			<label index="carousel.showtext">Show Text</label>
+			<label index="carousel.bootstrapspan">Bootstrap Span</label>
+			<label index="carousel.bootstraprow">Bootstrap Row</label>
+			<label index="carousel.interval">Interval / Speed (in milliseconds)</label>
+			<label index="carousel.stoponhover">Stop slides on mouseover</label>
+			
 		</languageKey>
 	</data>
 </T3locallang>

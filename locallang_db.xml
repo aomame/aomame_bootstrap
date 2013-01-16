@@ -6,10 +6,6 @@
 	</meta>
 	<data type="array">
 		<languageKey index="default" type="array">
-			<label index="tt_content.list_type_pi1">Bootstrap Collapse</label>
-			<label index="tt_content.list_type_pi2">Bootstrap Tab</label>
-			<label index="tt_content.list_type_pi3">Bootstrap Popover</label>
-			<label index="tt_content.list_type_pi4">Bootstrap Carousel</label>
 			
 			<label index="tt_content.empty_field">none</label>
 			<label index="tt_content.select_muted">Add Bootstrap class .muted</label>
@@ -50,6 +46,8 @@
 			<label index="tt_content.title_well">Bootstrap Well</label>
 			<label index="tt_content.title_muted">Bootstrap Muted</label>
 			<label index="tt_content.title_span">Bootstrap Span</label>
+			
+			<label index="tt_content.list_type_pi1">Bootstrap Components</label>
 		</languageKey>
 	</data>
 </T3locallang>

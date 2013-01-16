@@ -1,0 +1,617 @@
+<T3DataStructure>
+ <sheets>
+  <sDEF>
+  <ROOT>
+   <TCEforms>
+    <sheetTitle>Bootstrap Components</sheetTitle>
+   </TCEforms>
+   	<type>array</type>
+   	<el>
+		<selection>
+  			<TCEforms>
+    			<label>Type of form</label>
+    			<onChange>reload</onChange>
+    			<config>
+      				<type>select</type>
+      				<size>1</size>
+      				<maxitems>1</maxitems>
+      				<items>
+      					<numIndex index="0" type="array">
+          					<numIndex index="0"></numIndex>
+          					<numIndex index="1">0</numIndex>
+        				</numIndex>
+        				<numIndex index="1" type="array">
+          					<numIndex index="0">Bootstrap Collapse</numIndex>
+          					<numIndex index="1">collapse</numIndex>
+        				</numIndex>
+        				<numIndex index="2" type="array">
+         					<numIndex index="0">Bootstrap Tab</numIndex>
+         					<numIndex index="1">tab</numIndex>
+        				</numIndex>
+        				<numIndex index="3" type="array">
+         					<numIndex index="0">Bootstrap Popover</numIndex>
+         					<numIndex index="1">popover</numIndex>
+        				</numIndex>
+        				<numIndex index="4" type="array">
+         					<numIndex index="0">Bootstrap Carousel</numIndex>
+         					<numIndex index="1">carousel</numIndex>
+        				</numIndex>
+      				</items>
+    			</config>
+  			</TCEforms>
+		</selection>
+	
+		
+		
+		
+		
+		
+		
+	<collapse_contentuidlist>
+		<TCEforms>
+		    <label>LLL:EXT:aomame_bootstrap/pi1/locallang.xml:collapse.collapse.contentuidlist</label>
+		    <displayCond>FIELD:selection:=:collapse</displayCond>
+		    <config>
+		        <type>group</type>
+		        <internal_type>db</internal_type>
+		        <allowed>tt_content</allowed>
+		        <size>10</size>
+		        <minitems>1</minitems>
+		        <maxitems>99</maxitems>
+		    </config>
+		</TCEforms>
+	</collapse_contentuidlist>
+	<collapse_accordinghtmlid>
+      <TCEforms>
+        <label>LLL:EXT:aomame_bootstrap/pi1/locallang.xml:collapse.accordinghtmlid</label>
+        <displayCond>FIELD:selection:=:collapse</displayCond>
+        <config>
+          <type>input</type>
+        </config>
+      </TCEforms>
+    </collapse_accordinghtmlid>
+    <collapse_bootstrapspan>
+      <TCEforms>
+      <label>LLL:EXT:aomame_bootstrap/pi1/locallang.xml:collapse.bootstrapspan</label>
+      <displayCond>FIELD:selection:=:collapse</displayCond>
+        <config>
+        <type>select</type>
+        <items type="array">
+          <numIndex index="0" type="array">
+            <numIndex index="0"></numIndex>
+            <numIndex index="1"></numIndex>
+          </numIndex>
+          <numIndex index="1" type="array">
+            <numIndex index="0">span1</numIndex>
+            <numIndex index="1">span1</numIndex>
+          </numIndex>
+          <numIndex index="2" type="array">
+            <numIndex index="0">span2</numIndex>
+            <numIndex index="1">span2</numIndex>
+          </numIndex>
+          <numIndex index="3" type="array">
+            <numIndex index="0">span3</numIndex>
+            <numIndex index="1">span3</numIndex>
+          </numIndex> 
+          <numIndex index="4" type="array">
+            <numIndex index="0">span4</numIndex>
+            <numIndex index="1">span4</numIndex>
+          </numIndex>
+          <numIndex index="5" type="array">
+            <numIndex index="0">span5</numIndex>
+            <numIndex index="1">span5</numIndex>
+          </numIndex>
+          <numIndex index="6" type="array">
+            <numIndex index="0">span6</numIndex>
+            <numIndex index="1">span6</numIndex>
+          </numIndex>
+          <numIndex index="7" type="array">
+            <numIndex index="0">span7</numIndex>
+            <numIndex index="1">span7</numIndex>
+          </numIndex>
+          <numIndex index="8" type="array">
+            <numIndex index="0">span8</numIndex>
+            <numIndex index="1">span8</numIndex>
+          </numIndex> 
+          <numIndex index="9" type="array">
+            <numIndex index="0">span9</numIndex>
+            <numIndex index="1">span9</numIndex>
+          </numIndex> 
+          <numIndex index="10" type="array">
+            <numIndex index="0">span10</numIndex>
+            <numIndex index="1">span10</numIndex>
+          </numIndex> 
+          <numIndex index="11" type="array">
+            <numIndex index="0">span11</numIndex>
+            <numIndex index="1">span11</numIndex>
+          </numIndex> 
+          <numIndex index="12" type="array">
+            <numIndex index="0">span12</numIndex>
+            <numIndex index="1">span12</numIndex>
+          </numIndex> 
+        </items>         
+        <maxitems>1</maxitems>
+        <size>13</size>
+        <multiple>1</multiple>
+        <selectedListStyle>width:150px</selectedListStyle>
+        <itemListStyle>width:150px</itemListStyle>
+        </config>
+      </TCEforms>
+  	</collapse_bootstrapspan>
+  	<collapse_bootstraprow>
+      <TCEforms>
+      <label>LLL:EXT:aomame_bootstrap/pi1/locallang.xml:collapse.bootstraprow</label>
+      <displayCond>FIELD:selection:=:collapse</displayCond>
+        <config>
+        <type>select</type>
+        <items type="array">
+          <numIndex index="0" type="array">
+            <numIndex index="0"></numIndex>
+            <numIndex index="1"></numIndex>
+          </numIndex>
+          <numIndex index="1" type="array">
+            <numIndex index="0">row</numIndex>
+            <numIndex index="1">row</numIndex>
+          </numIndex>
+          <numIndex index="2" type="array">
+            <numIndex index="0">row-fluid</numIndex>
+            <numIndex index="1">row-fluid</numIndex>
+          </numIndex> 
+        </items>         
+        <maxitems>1</maxitems>
+        <size>3</size>
+        <multiple>1</multiple>
+        <selectedListStyle>width:150px</selectedListStyle>
+        <itemListStyle>width:150px</itemListStyle>
+        </config>
+      </TCEforms>
+  	</collapse_bootstraprow>
+  	<collapse_collapsestyle>
+	  <TCEforms>
+  		<label>LLL:EXT:aomame_bootstrap/pi1/locallang.xml:collapse.collapsestyle</label>
+  		<displayCond>FIELD:selection:=:collapse</displayCond>
+  		  <config>
+  			<type>select</type>
+        	<items type="array">
+          <numIndex index="0" type="array">
+            <numIndex index="0"></numIndex>
+            <numIndex index="1"></numIndex>
+          </numIndex>
+          <numIndex index="1" type="array">
+            <numIndex index="0">toggle</numIndex>
+            <numIndex index="1">toggle</numIndex>
+          </numIndex>
+          <numIndex index="2" type="array">
+            <numIndex index="0">show</numIndex>
+            <numIndex index="1">show</numIndex>
+          </numIndex>
+          <numIndex index="3" type="array">
+            <numIndex index="0">hide</numIndex>
+            <numIndex index="1">hide</numIndex>
+          </numIndex> 
+        </items>         
+        <maxitems>1</maxitems>
+        <size>4</size>
+        <multiple>1</multiple>
+        <selectedListStyle>width:150px</selectedListStyle>
+        <itemListStyle>width:150px</itemListStyle>
+  			</config>
+  		</TCEforms>
+  	</collapse_collapsestyle>
+		
+		
+	
+	
+	
+	
+	<tab_contentuidlist>
+		<TCEforms>
+		    <label>LLL:EXT:aomame_bootstrap/pi1/locallang.xml:tab.contentuidlist</label>
+		    <displayCond>FIELD:selection:=:tab</displayCond>
+		    <config>
+		        <type>group</type>
+		        <internal_type>db</internal_type>
+		        <allowed>tt_content</allowed>
+		        <size>10</size>
+		        <minitems>1</minitems>
+		        <maxitems>99</maxitems>
+		    </config>
+		</TCEforms>
+	</tab_contentuidlist>
+	<tab_tabhtmlid>
+      <TCEforms>
+        <label>LLL:EXT:aomame_bootstrap/pi1/locallang.xml:tab.tabhtmlid</label>
+        <displayCond>FIELD:selection:=:tab</displayCond>
+        <config>
+          <type>input</type>
+        </config>
+      </TCEforms>
+    </tab_tabhtmlid>
+    <tab_bootstrapspan>
+      <TCEforms>
+      <label>LLL:EXT:aomame_bootstrap/pi1/locallang.xml:tab.bootstrapspan</label>
+      <displayCond>FIELD:selection:=:tab</displayCond>
+        <config>
+        <type>select</type>
+        <items type="array">
+          <numIndex index="0" type="array">
+            <numIndex index="0"></numIndex>
+            <numIndex index="1"></numIndex>
+          </numIndex>
+          <numIndex index="1" type="array">
+            <numIndex index="0">span1</numIndex>
+            <numIndex index="1">span1</numIndex>
+          </numIndex>
+          <numIndex index="2" type="array">
+            <numIndex index="0">span2</numIndex>
+            <numIndex index="1">span2</numIndex>
+          </numIndex>
+          <numIndex index="3" type="array">
+            <numIndex index="0">span3</numIndex>
+            <numIndex index="1">span3</numIndex>
+          </numIndex> 
+          <numIndex index="4" type="array">
+            <numIndex index="0">span4</numIndex>
+            <numIndex index="1">span4</numIndex>
+          </numIndex>
+          <numIndex index="5" type="array">
+            <numIndex index="0">span5</numIndex>
+            <numIndex index="1">span5</numIndex>
+          </numIndex>
+          <numIndex index="6" type="array">
+            <numIndex index="0">span6</numIndex>
+            <numIndex index="1">span6</numIndex>
+          </numIndex>
+          <numIndex index="7" type="array">
+            <numIndex index="0">span7</numIndex>
+            <numIndex index="1">span7</numIndex>
+          </numIndex>
+          <numIndex index="8" type="array">
+            <numIndex index="0">span8</numIndex>
+            <numIndex index="1">span8</numIndex>
+          </numIndex> 
+          <numIndex index="9" type="array">
+            <numIndex index="0">span9</numIndex>
+            <numIndex index="1">span9</numIndex>
+          </numIndex> 
+          <numIndex index="10" type="array">
+            <numIndex index="0">span10</numIndex>
+            <numIndex index="1">span10</numIndex>
+          </numIndex> 
+          <numIndex index="11" type="array">
+            <numIndex index="0">span11</numIndex>
+            <numIndex index="1">span11</numIndex>
+          </numIndex> 
+          <numIndex index="12" type="array">
+            <numIndex index="0">span12</numIndex>
+            <numIndex index="1">span12</numIndex>
+          </numIndex> 
+        </items>         
+        <maxitems>1</maxitems>
+        <size>13</size>
+        <multiple>1</multiple>
+        <selectedListStyle>width:150px</selectedListStyle>
+        <itemListStyle>width:150px</itemListStyle>
+        </config>
+      </TCEforms>
+  	</tab_bootstrapspan>
+  	<tab_bootstraprow>
+      <TCEforms>
+      <label>LLL:EXT:aomame_bootstrap/pi1/locallang.xml:tab.bootstraprow</label>
+      <displayCond>FIELD:selection:=:tab</displayCond>
+        <config>
+        <type>select</type>
+        <items type="array">
+          <numIndex index="0" type="array">
+            <numIndex index="0"></numIndex>
+            <numIndex index="1"></numIndex>
+          </numIndex>
+          <numIndex index="1" type="array">
+            <numIndex index="0">row</numIndex>
+            <numIndex index="1">row</numIndex>
+          </numIndex>
+          <numIndex index="2" type="array">
+            <numIndex index="0">row-fluid</numIndex>
+            <numIndex index="1">row-fluid</numIndex>
+          </numIndex> 
+        </items>         
+        <maxitems>1</maxitems>
+        <size>3</size>
+        <multiple>1</multiple>
+        <selectedListStyle>width:150px</selectedListStyle>
+        <itemListStyle>width:150px</itemListStyle>
+        </config>
+      </TCEforms>
+  	</tab_bootstraprow>
+  	<tab_activetab>
+	  <TCEforms>
+        <label>LLL:EXT:aomame_bootstrap/pi1/locallang.xml:tab.activetab</label>
+        <displayCond>FIELD:selection:=:tab</displayCond>
+        <config>
+          <type>input</type>
+          <size>5</size>
+          <eval>int</eval>
+        </config>
+      </TCEforms>
+  	</tab_activetab>
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	<popover_contentuid>
+		<TCEforms>
+		    <label>LLL:EXT:aomame_bootstrap/pi1/locallang.xml:popover.contentuid</label>
+		    <displayCond>FIELD:selection:=:popover</displayCond>
+		    <config>
+		        <type>group</type>
+		        <internal_type>db</internal_type>
+		        <allowed>tt_content</allowed>
+		        <size>1</size>
+		        <minitems>1</minitems>
+		        <maxitems>1</maxitems>
+		    </config>
+		</TCEforms>
+	</popover_contentuid>
+    <popover_direction>
+      <TCEforms>
+      <label>LLL:EXT:aomame_bootstrap/pi1/locallang.xml:popover.direction</label>
+      <displayCond>FIELD:selection:=:popover</displayCond>
+        <config>
+        <type>select</type>
+        <items type="array">
+          <numIndex index="0" type="array">
+            <numIndex index="0">top</numIndex>
+            <numIndex index="1">top</numIndex>
+          </numIndex>
+          <numIndex index="1" type="array">
+            <numIndex index="0">right</numIndex>
+            <numIndex index="1">right</numIndex>
+          </numIndex>
+          <numIndex index="2" type="array">
+            <numIndex index="0">bottom</numIndex>
+            <numIndex index="1">bottom</numIndex>
+          </numIndex> 
+          <numIndex index="3" type="array">
+            <numIndex index="0">left</numIndex>
+            <numIndex index="1">left</numIndex>
+          </numIndex> 
+        </items>         
+        <maxitems>1</maxitems>
+        <size>4</size>
+        <multiple>1</multiple>
+        <selectedListStyle>width:150px</selectedListStyle>
+        <itemListStyle>width:150px</itemListStyle>
+        </config>
+      </TCEforms>
+  	</popover_direction>
+  	<popover_selector>
+      <TCEforms>
+        <label>LLL:EXT:aomame_bootstrap/pi1/locallang.xml:popover.selector</label>
+        <displayCond>FIELD:selection:=:popover</displayCond>
+        <config>
+          <type>input</type>
+        </config>
+      </TCEforms>
+    </popover_selector>
+    <popover_trigger>
+      <TCEforms>
+      <label>LLL:EXT:aomame_bootstrap/pi1/locallang.xml:popover.trigger</label>
+      <displayCond>FIELD:selection:=:popover</displayCond>
+        <config>
+        <type>select</type>
+        <items type="array">
+          <numIndex index="0" type="array">
+            <numIndex index="0">click</numIndex>
+            <numIndex index="1">click</numIndex>
+          </numIndex>
+          <numIndex index="1" type="array">
+            <numIndex index="0">hover</numIndex>
+            <numIndex index="1">hover</numIndex>
+          </numIndex>
+          <numIndex index="2" type="array">
+            <numIndex index="0">focus</numIndex>
+            <numIndex index="1">focus</numIndex>
+          </numIndex> 
+          <numIndex index="3" type="array">
+            <numIndex index="0">manual</numIndex>
+            <numIndex index="1">manual</numIndex>
+          </numIndex> 
+        </items>         
+        <maxitems>1</maxitems>
+        <size>4</size>
+        <multiple>1</multiple>
+        <selectedListStyle>width:150px</selectedListStyle>
+        <itemListStyle>width:150px</itemListStyle>
+        </config>
+      </TCEforms>
+  	</popover_trigger>
+  	<popover_delayshow>
+      <TCEforms>
+        <label>LLL:EXT:aomame_bootstrap/pi1/locallang.xml:popover.delayshow</label>
+        <displayCond>FIELD:selection:=:popover</displayCond>
+        <config>
+          <type>input</type>
+          <eval>int</eval>
+          <size>10</size>
+        </config>
+      </TCEforms>
+    </popover_delayshow>
+    <popover_delayhide>
+      <TCEforms>
+        <label>LLL:EXT:aomame_bootstrap/pi1/locallang.xml:popover.delayhide</label>
+        <displayCond>FIELD:selection:=:popover</displayCond>
+        <config>
+          <type>input</type>
+          <eval>int</eval>
+          <size>10</size>
+        </config>
+      </TCEforms>
+    </popover_delayhide>
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	<carousel_contentuidlist>
+		<TCEforms>
+		    <label>LLL:EXT:aomame_bootstrap/pi1/locallang.xml:carousel.contentuidlist</label>
+		    <displayCond>FIELD:selection:=:carousel</displayCond>
+		    <config>
+		        <type>group</type>
+		        <internal_type>db</internal_type>
+		        <allowed>tt_content</allowed>
+		        <size>6</size>
+		        <minitems>1</minitems>
+		        <maxitems>99</maxitems>
+		    </config>
+		</TCEforms>
+	</carousel_contentuidlist>
+	<carousel_carouselhtmlid>
+      <TCEforms>
+        <label>LLL:EXT:aomame_bootstrap/pi1/locallang.xml:carousel.carouselhtmlid</label>
+        <displayCond>FIELD:selection:=:carousel</displayCond>
+        <config>
+          <type>input</type>
+        </config>
+      </TCEforms>
+    </carousel_carouselhtmlid>
+    <carousel_bootstrapspan>
+      <TCEforms>
+      <label>LLL:EXT:aomame_bootstrap/pi1/locallang.xml:carousel.bootstrapspan</label>
+        <displayCond>FIELD:selection:=:carousel</displayCond>
+        <config>
+        <type>select</type>
+        <items type="array">
+          <numIndex index="0" type="array">
+            <numIndex index="0"></numIndex>
+            <numIndex index="1"></numIndex>
+          </numIndex>
+          <numIndex index="1" type="array">
+            <numIndex index="0">span1</numIndex>
+            <numIndex index="1">span1</numIndex>
+          </numIndex>
+          <numIndex index="2" type="array">
+            <numIndex index="0">span2</numIndex>
+            <numIndex index="1">span2</numIndex>
+          </numIndex>
+          <numIndex index="3" type="array">
+            <numIndex index="0">span3</numIndex>
+            <numIndex index="1">span3</numIndex>
+          </numIndex> 
+          <numIndex index="4" type="array">
+            <numIndex index="0">span4</numIndex>
+            <numIndex index="1">span4</numIndex>
+          </numIndex>
+          <numIndex index="5" type="array">
+            <numIndex index="0">span5</numIndex>
+            <numIndex index="1">span5</numIndex>
+          </numIndex>
+          <numIndex index="6" type="array">
+            <numIndex index="0">span6</numIndex>
+            <numIndex index="1">span6</numIndex>
+          </numIndex>
+          <numIndex index="7" type="array">
+            <numIndex index="0">span7</numIndex>
+            <numIndex index="1">span7</numIndex>
+          </numIndex>
+          <numIndex index="8" type="array">
+            <numIndex index="0">span8</numIndex>
+            <numIndex index="1">span8</numIndex>
+          </numIndex> 
+          <numIndex index="9" type="array">
+            <numIndex index="0">span9</numIndex>
+            <numIndex index="1">span9</numIndex>
+          </numIndex> 
+          <numIndex index="10" type="array">
+            <numIndex index="0">span10</numIndex>
+            <numIndex index="1">span10</numIndex>
+          </numIndex> 
+          <numIndex index="11" type="array">
+            <numIndex index="0">span11</numIndex>
+            <numIndex index="1">span11</numIndex>
+          </numIndex> 
+          <numIndex index="12" type="array">
+            <numIndex index="0">span12</numIndex>
+            <numIndex index="1">span12</numIndex>
+          </numIndex> 
+        </items>         
+        <maxitems>1</maxitems>
+        <size>13</size>
+        <multiple>1</multiple>
+        <selectedListStyle>width:150px</selectedListStyle>
+        <itemListStyle>width:150px</itemListStyle>
+        </config>
+      </TCEforms>
+  	</carousel_bootstrapspan>
+  	<carousel_bootstraprow>
+      <TCEforms>
+      <label>LLL:EXT:aomame_bootstrap/pi1/locallang.xml:carousel.bootstraprow</label>
+        <displayCond>FIELD:selection:=:carousel</displayCond>
+        <config>
+        <type>select</type>
+        <items type="array">
+          <numIndex index="0" type="array">
+            <numIndex index="0"></numIndex>
+            <numIndex index="1"></numIndex>
+          </numIndex>
+          <numIndex index="1" type="array">
+            <numIndex index="0">row</numIndex>
+            <numIndex index="1">row</numIndex>
+          </numIndex>
+          <numIndex index="2" type="array">
+            <numIndex index="0">row-fluid</numIndex>
+            <numIndex index="1">row-fluid</numIndex>
+          </numIndex> 
+        </items>         
+        <maxitems>1</maxitems>
+        <size>3</size>
+        <multiple>1</multiple>
+        <selectedListStyle>width:150px</selectedListStyle>
+        <itemListStyle>width:150px</itemListStyle>
+        </config>
+      </TCEforms>
+  	</carousel_bootstraprow>
+  	<carousel_showtext>
+		<TCEforms>
+			<label>LLL:EXT:aomame_bootstrap/pi1/locallang.xml:carousel.showtext</label>
+        <displayCond>FIELD:selection:=:carousel</displayCond>
+			<config>
+				<type>check</type>
+			</config>
+		</TCEforms>
+	</carousel_showtext>
+	<carousel_stoponhover>
+		<TCEforms>
+			<label>LLL:EXT:aomame_bootstrap/pi1/locallang.xml:carousel.stoponhover</label>
+        <displayCond>FIELD:selection:=:carousel</displayCond>
+			<config>
+				<type>check</type>
+			</config>
+		</TCEforms>
+	</carousel_stoponhover>
+	<carousel_interval>
+      <TCEforms>
+        <label>LLL:EXT:aomame_bootstrap/pi1/locallang.xml:carousel.interval</label>
+        <displayCond>FIELD:selection:=:carousel</displayCond>
+        <config>
+          <type>input</type>
+          <size>10</size>
+          <eval>int</eval>
+        </config>
+      </TCEforms>
+    </carousel_interval>
+  	
+  	
+  	
+  	
+  	
+  	</el>
+   </ROOT>
+  </sDEF>
+  </sheets>
+</T3DataStructure>

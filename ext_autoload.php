@@ -25,7 +25,10 @@
 $extensionPath = t3lib_extMgm::extPath('aomame_bootstrap');
 
 return array(
-    'tx_aomamebootstrap_ce_renderer' => $extensionPath . 'classes/class.tx_aomamebootstrap_ce_renderer.php'
+    'tx_aomamebootstrap_component_collapse' => $extensionPath . 'classes/class.tx_aomamebootstrap_component_collapse.php',
+    'tx_aomamebootstrap_component_tab' => $extensionPath . 'classes/class.tx_aomamebootstrap_component_tab.php',
+    'tx_aomamebootstrap_component_popover' => $extensionPath . 'classes/class.tx_aomamebootstrap_component_popover.php',
+    'tx_aomamebootstrap_component_carousel' => $extensionPath . 'classes/class.tx_aomamebootstrap_component_carousel.php'
 );
 
 ?>

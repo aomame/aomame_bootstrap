@@ -1,5 +1,9 @@
 plugin.tx_aomamebootstrap_pi1 {
 	bootstrap {
+		
+		# field: "selection" in flexform - choose a component
+		component = 
+	
 		collapse {
 			contentUidList = 
 			accordingHtmlId = aomame_collapse
