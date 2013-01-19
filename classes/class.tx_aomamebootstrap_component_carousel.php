@@ -166,8 +166,8 @@ class tx_aomamebootstrap_component_carousel extends tslib_pibase {
 }
 
 
-if (defined('TYPO3_MODE') && isset($GLOBALS['TYPO3_CONF_VARS'][TYPO3_MODE]['XCLASS']['ext/aomame_bootstrap/pi4/class.tx_aomamebootstrap_pi4.php'])) {
-	include_once($GLOBALS['TYPO3_CONF_VARS'][TYPO3_MODE]['XCLASS']['ext/aomame_bootstrap/pi4/class.tx_aomamebootstrap_pi4.php']);
+if (defined('TYPO3_MODE') && isset($GLOBALS['TYPO3_CONF_VARS'][TYPO3_MODE]['XCLASS']['ext/aomame_bootstrap/classes/class.tx_aomamebootstrap_component_carousel.php'])) {
+	include_once($GLOBALS['TYPO3_CONF_VARS'][TYPO3_MODE]['XCLASS']['ext/aomame_bootstrap/classes/class.tx_aomamebootstrap_component_carousel.php']);
 }
 
 ?>

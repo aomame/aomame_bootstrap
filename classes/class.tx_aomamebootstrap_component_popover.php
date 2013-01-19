@@ -54,6 +54,7 @@ class tx_aomamebootstrap_component_popover extends tslib_pibase {
 		$this->getData();
 		$this->writeJavaScriptConfiguration();
 		
+		
 		//Debug
 		//$GLOBALS["TSFE"]->set_no_cache();
 		//echo t3lib_utility_Debug::debug();
@@ -63,8 +64,10 @@ class tx_aomamebootstrap_component_popover extends tslib_pibase {
 	
 	
 	private function writeJavaScriptConfiguration(){
+    	
+    	if($this->trigger == 'manual'){
     	$GLOBALS['TSFE']->additionalFooterData[$this->extKey] = '
-		  <script type="text/javascript" >
+		  <script type="text/javascript">
 			$("'.$this->selector.'").popover({
 				animation: true,
 				html: true,		
@@ -78,8 +81,36 @@ class tx_aomamebootstrap_component_popover extends tslib_pibase {
 					hide: '.$this->delayHide.'
 				}
 			});	
-		  </script>
-		';
+				
+			$("'.$this->selector.'").popover("show");
+				
+			$("body").click(function(){
+				$("'.$this->selector.'").popover("hide");
+			});
+			$("'.$this->selector.', .popover").click(function(e) {
+    			e.stopPropagation();
+    			return false;
+			});
+			
+		  </script>';
+    	}else{
+	    	$GLOBALS['TSFE']->additionalFooterData[$this->extKey] = '
+			  <script type="text/javascript">
+				$("'.$this->selector.'").popover({
+					animation: true,
+					html: true,		
+					placement: "'.$this->direction.'",
+					selector: false,
+					trigger: "'.$this->trigger.'",
+					title: "'.$this->popoverData['title'].'",
+					content: "'.$this->popoverData['content'].'",
+					delay: { 
+						show: '.$this->delayShow.',
+						hide: '.$this->delayHide.'
+					}
+				});	
+			  </script>';
+			}
 		return false;
 	}
 	
@@ -133,8 +164,8 @@ class tx_aomamebootstrap_component_popover extends tslib_pibase {
 }
 
 
-if (defined('TYPO3_MODE') && isset($GLOBALS['TYPO3_CONF_VARS'][TYPO3_MODE]['XCLASS']['ext/aomame_bootstrap/pi3/class.tx_aomamebootstrap_pi3.php'])) {
-	include_once($GLOBALS['TYPO3_CONF_VARS'][TYPO3_MODE]['XCLASS']['ext/aomame_bootstrap/pi3/class.tx_aomamebootstrap_pi3.php']);
+if (defined('TYPO3_MODE') && isset($GLOBALS['TYPO3_CONF_VARS'][TYPO3_MODE]['XCLASS']['ext/aomame_bootstrap/classes/class.tx_aomamebootstrap_component_popover.php'])) {
+	include_once($GLOBALS['TYPO3_CONF_VARS'][TYPO3_MODE]['XCLASS']['ext/aomame_bootstrap/classes/class.tx_aomamebootstrap_component_popover.php']);
 }
 
 ?>

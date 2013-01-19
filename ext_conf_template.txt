@@ -1,2 +1,23 @@
-# cat=basic/enable; type=boolean; label=Set PageTSconfig by default:Add Layouts to each Content Element to choose the Bootstrap visibility for different devices - e.g. .visible-desktop or .hidden-phone
-setPageTSconfig = 1
+# cat=basic/enable; type=boolean; label=Include the Bootstrap CSS
+includeBootstrapCSS = 0
+
+
+# cat=basic/enable; type=boolean; label=Include jQuery (jQuery version in this extension is 1.8.3)
+includeJQuery = 0
+
+# cat=basic/enable; type=boolean; label=Include the Bootstrap JavaScript
+includeBootstrapJS = 0
+
+
+# cat=basic/enable; type=boolean; label=If CSS is included by the extension, you can include also the responsive functions of Bootstrap here. This will include the Bootstrap responsive CSS and the meta tag from Bootstrap
+useBootstrapResponsive = 1
+
+
+# cat=basic/enable; type=boolean; label=By default, included files are minified. If CSS and JS is included by the extension, you can set this option to include not minified files
+dontUseMinifiedFiles = 0
+
+# cat=basic/enable; type=boolean; label=By default, JavaScripts are included to the end of the body tag. Here you can include it to the head tag instead.
+allJStoHead = 0
+
+
+

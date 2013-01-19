@@ -5,6 +5,13 @@ if (!defined('TYPO3_MODE')) {
 
 t3lib_div::loadTCA('tt_content');
 
+//require_once('C:/xampp/htdocs/projects/prime/' . t3lib_extMgm::siteRelPath('aomame_bootstrap') . 'classes/class.tx_aomamebootstrap_fileinclude.php');
+
+$fileincluder = t3lib_div::makeInstance('tx_aomamebootstrap_fileinclude');
+$fileincluder->fileInclude($_EXTCONF);
+
+
+
 // Setting of backend fields "Bootstrap Helper Classes"
 $be_fields = array(
 	'tx_aomamebootstrap_direction' => array(		

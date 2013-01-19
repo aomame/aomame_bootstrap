@@ -28,7 +28,8 @@ return array(
     'tx_aomamebootstrap_component_collapse' => $extensionPath . 'classes/class.tx_aomamebootstrap_component_collapse.php',
     'tx_aomamebootstrap_component_tab' => $extensionPath . 'classes/class.tx_aomamebootstrap_component_tab.php',
     'tx_aomamebootstrap_component_popover' => $extensionPath . 'classes/class.tx_aomamebootstrap_component_popover.php',
-    'tx_aomamebootstrap_component_carousel' => $extensionPath . 'classes/class.tx_aomamebootstrap_component_carousel.php'
+    'tx_aomamebootstrap_component_carousel' => $extensionPath . 'classes/class.tx_aomamebootstrap_component_carousel.php',
+    'tx_aomamebootstrap_fileinclude' => $extensionPath . 'classes/class.tx_aomamebootstrap_fileinclude.php'
 );
 
 ?>

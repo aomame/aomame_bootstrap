@@ -150,8 +150,8 @@ class tx_aomamebootstrap_component_tab extends tslib_pibase {
 }
 
 
-if (defined('TYPO3_MODE') && isset($GLOBALS['TYPO3_CONF_VARS'][TYPO3_MODE]['XCLASS']['ext/aomame_bootstrap/pi2/class.tx_aomamebootstrap_pi2.php'])) {
-	include_once($GLOBALS['TYPO3_CONF_VARS'][TYPO3_MODE]['XCLASS']['ext/aomame_bootstrap/pi2/class.tx_aomamebootstrap_pi2.php']);
+if (defined('TYPO3_MODE') && isset($GLOBALS['TYPO3_CONF_VARS'][TYPO3_MODE]['XCLASS']['ext/aomame_bootstrap/classes/class.tx_aomamebootstrap_component_tab.php'])) {
+	include_once($GLOBALS['TYPO3_CONF_VARS'][TYPO3_MODE]['XCLASS']['ext/aomame_bootstrap/classes/class.tx_aomamebootstrap_component_tab.php']);
 }
 
 ?>

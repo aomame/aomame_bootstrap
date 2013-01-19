@@ -140,6 +140,8 @@ tt_content.stdWrap.innerWrap.cObject.default {
 		}
 		10.value = {register:direction} {register:alert} {register:well} {register:muted} {register:clear} {register:span} {register:visibility}
 		10.insertData = 1
+		
+		99 = RESTORE_REGISTER
 	}
 	
 	#insert the Bootstrap closebutton if checkbox is active within the backend content element
@@ -158,7 +160,7 @@ tt_content.stdWrap.innerWrap.cObject.default {
 	}
 	
 	
-	97 = RESTORE_REGISTER
+	
 	
 }
 
